@@ -9,8 +9,17 @@ public class _01_SortedArrayChecker {
      * and false otherwise.
      */
     public static boolean intArraySorted(int[] arr) {
-        
-        return false;
+    	double num = arr[0];
+		for(int f = 1; f < arr.length; f++) {
+			if(num>arr[f]) {
+				
+				return false;
+				
+			}
+			num = arr[f];
+		}
+	
+	return true;
     }
 
     /*
@@ -20,6 +29,19 @@ public class _01_SortedArrayChecker {
      * The method returns true if the double array is in ascending order
      * and false otherwise.
      */
+    static boolean doubleArraySorted(double[] dubel) {
+    	double num = dubel[0];
+    		for(int f = 1; f < dubel.length; f++) {
+    			if(num>dubel[f]) {
+    				
+    				return false;
+    				
+    			}
+    			num = dubel[f];
+    		}
+    	
+		return true;
+    }
 
 
     /*
@@ -30,6 +52,18 @@ public class _01_SortedArrayChecker {
      * order and false otherwise (You can compare characters just like
      * integers).
      */
+    static boolean charArraySorted(char[] striang) {
+    	char strizng = striang[0];
+    		
+    	for(int f = 1; f < striang.length; f++) {
+    			if(strizng > striang[f]) {
+    				return false;
+    			}
+    			strizng = striang[f];
+    		}
+    	
+		return true;
+    }
 
 
     /*
@@ -39,5 +73,19 @@ public class _01_SortedArrayChecker {
      *  The method returns true if the String array is in alphabetical
      *  order and false otherwise (Use the compareTo(String) method).
      */
+    static boolean stringArraySorted(String[] stringz) {
+    	String striang = stringz[0];
+    	for(int f = 1; f < stringz.length; f++) {
+    		if(striang.compareTo(stringz[f])>0) {
+    			return false;
+    			
+    		}
+    		striang = stringz[f];
+    	}
+    	
+    	
+    	
+		return true;
+    }
 
 }

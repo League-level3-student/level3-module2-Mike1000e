@@ -3,7 +3,7 @@
  */
 
 // 1. Create an array of ints. Don't initialize it yet.
-
+     
 
 void setup() {
   // 2. Set the size of your window to at least 500 width 500 height

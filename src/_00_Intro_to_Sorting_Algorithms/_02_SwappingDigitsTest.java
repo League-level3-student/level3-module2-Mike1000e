@@ -12,7 +12,10 @@ class _02_SwappingDigitsTest {
         int[] y = {6, 5};
         _02_SwappingDigits.swapArrayOfTwo(x);
         assertArrayEquals(y, x);
-    }
+        
+        
+        }
+    
     
     @Test
     void test2() {
